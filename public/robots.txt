@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+# If you have a sitemap, update the URL below and uncomment
+# Sitemap: https://www.example.com/sitemap.xml
+
+
