@@ -1,20 +1,30 @@
 // src/App.jsx
+import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+import EventsPage from './pages/EventsPage';
+import EventDetailsPage from './pages/EventDetailsPage';
 import Navbar from './components/Navbar';
 import { Navbar2 } from './components/Navbar2';
-import HeroSection from './components/HeroSection';
-import EventList from './components/EventList';
-import Footer from './components/Footer';
+import {Footer} from './components/Footer';
 
-function App() {
+export default function App() {
+  const [basket, setBasket] = useState([]);
+
+  const addToBasket = (event) => {
+    setBasket((prev) => [...prev, event]);
+  };
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen flex flex-col bg-white">
       <Navbar2/>
       <Navbar />
-      {/*<HeroSection />*/}
-      <EventList /> {/* No props needed now */}
-      <Footer />
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<EventsPage />} />
+          <Route path="/events/:id" element={<EventDetailsPage addToBasket={addToBasket} />} />
+        </Routes>
+      </main>
+      <Footer/>
     </div>
   );
 }
-
-export default App;

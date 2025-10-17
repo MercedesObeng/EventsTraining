@@ -2,7 +2,7 @@ import { Calendar, Clock, MapPin } from 'lucide-react';
 
 export default function EventCard({ title, description, date, time, location, image, type }) {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    <div className="bg-[#e6eaf1] rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
       <div className="relative h-48 overflow-hidden">
         <img
           src={image}
