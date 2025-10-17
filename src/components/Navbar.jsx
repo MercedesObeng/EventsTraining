@@ -20,10 +20,10 @@ export default function Navbar() {
                         <Users className="w-7 h-7 sm:w-8 sm:h-8 text-slate-700" />
                         <div>
                             <h1 className="text-lg sm:text-xl font-bold text-slate-800">
-                                Member Benefits
+                                Training and Events
                             </h1>
                             <p className="text-[10px] sm:text-xs text-slate-600">
-                                Exclusive Member Offers
+                                Exclusive opportunities for Memebrs and Non Memebrs
                             </p>
                         </div>
                     </Link>
