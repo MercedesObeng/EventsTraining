@@ -15,6 +15,7 @@ const events = [
         image:
             'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800',
         type: 'Networking',
+        format: 'in-person',
         highlights: [
             'Meet business professionals across multiple industries',
             'Enjoy a complimentary breakfast buffet',
@@ -44,6 +45,7 @@ const events = [
         image:
             'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
         type: 'Training',
+        format: 'in-person',
         highlights: [
             'Learn practical SEO techniques for 2025',
             'Improve ad performance on Google & Meta',
@@ -72,6 +74,7 @@ const events = [
         image:
             'https://images.pexels.com/photos/1181622/pexels-photo-1181622.jpeg?auto=compress&cs=tinysrgb&w=800',
         type: 'Workshop',
+        format: 'in-person',
         highlights: [
             'Interactive role-play and discussion sessions',
             'Personal leadership assessment',
@@ -100,6 +103,7 @@ const events = [
         image:
             'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=800',
         type: 'Conference',
+        format: 'virtual',
         highlights: [
             'Keynotes from national business leaders',
             'Panel discussions and Q&A sessions',
@@ -128,6 +132,7 @@ const events = [
         image:
             'https://images.pexels.com/photos/7661590/pexels-photo-7661590.jpeg?auto=compress&cs=tinysrgb&w=800',
         type: 'Training',
+        format: 'in-person',
         highlights: [
             'Learn key export documentation and customs rules',
             'Understand Incoterms and international payment systems',
@@ -156,6 +161,7 @@ const events = [
         image:
             'https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=800',
         type: 'Networking',
+        format: 'in-person',
         highlights: [
             'Inspiring guest speakers',
             'Networking with local female leaders',
@@ -168,7 +174,7 @@ const events = [
         ],
         memberPrice: 20,
         nonMemberPrice: 35,
-        maxTickets: 10,
+        maxTickets: 2,
     },
 ];
 

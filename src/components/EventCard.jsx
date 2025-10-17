@@ -1,4 +1,6 @@
 import { Calendar, Clock, MapPin } from 'lucide-react';
+import { motion } from "framer-motion";
+import { ChevronRight } from "lucide-react";
 
 export default function EventCard({ title, description, date, time, location, image, type }) {
   return (
@@ -42,9 +44,14 @@ export default function EventCard({ title, description, date, time, location, im
           </div>
         </div>
 
-        <button className="w-full bg-[#becf00] hover:bg-[#a8b800] text-gray-900 font-semibold py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
-          Book Now
-        </button>
+        <motion.button
+          whileHover={{ x: 3 }}
+          whileTap={{ scale: 0.97 }}
+          className="self-start inline-flex items-center justify-center gap-1 text-sm font-medium text-slate-900 px-4 py-2 rounded-full shadow-md transition-all duration-300 bg-[#BDCF00] hover:opacity-90"
+        >
+          <span>Book Now</span>
+          <ChevronRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+        </motion.button>
       </div>
     </div>
   );
